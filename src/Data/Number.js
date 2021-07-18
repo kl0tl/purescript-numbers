@@ -3,11 +3,11 @@
 
 export var nan = NaN;
 
-export { isNaN };
+export var isNaN = Number.isNaN;
 
 export var infinity = Infinity;
 
-export { isFinite };
+export var isFinite = Number.isFinite;
 
 export var fromStringImpl = function(str, isFinite, just, nothing) {
   var num = parseFloat(str);
